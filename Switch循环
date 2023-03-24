@@ -1,0 +1,43 @@
+# TheStart
+开始着手你的Java吧！
+	public static void main(String[] args) {
+		System.out.println("请选择车辆型号：");
+		System.out.println("===================================================");
+		System.out.println("编号  ||\t车型\t\t车辆规格（米）\t车辆容载量（托）");
+		System.out.println("===================================================");
+		System.out.println("1  ||\t2T\t\t4.2*1.6*1.8\t4");
+		System.out.println("---------------------------------------------------");
+		System.out.println("2  ||\t5T\t\t6.8*2.4*2.4\t10");
+		System.out.println("---------------------------------------------------");
+		System.out.println("3  ||\t8T\t\t7.6*2.4*2.4\t12");
+		System.out.println("---------------------------------------------------");
+		System.out.println("4  ||\t10T\t\t9.6*2.4*2.4\t16");
+		System.out.println("---------------------------------------------------");
+		System.out.println("5  ||\t集装箱 20‘\t\t5.8*2.4*2.4\t10");
+		System.out.println("---------------------------------------------------");
+		System.out.println("6  ||\t集装箱 40‘\t\t12*2.4*2.4\t20");
+		System.out.println("---------------------------------------------------");
+		System.out.println("7  ||\t小车\t\tN/A\t\t纸箱");
+		System.out.println("===================================================");
+		Scanner in =new Scanner(System.in);
+		System.out.println("请输入你选择的车辆型号：");
+		int number = in.nextInt();
+		switch(number) {
+		case 1:System.out.println("你选的车型是：2T，车辆规格是：4.2*1.6*1.8，车容载量是：4");
+		break;
+		case 2:System.out.println("你选的车型是：5T，车辆规格是：6.8*2.4*2.4，车容载量是：10");
+		break;
+		case 3:System.out.println("你选的车型是：8T，车辆规格是：7.6*2.4*2.4，车容载量是：12");
+		break;
+		case 4:System.out.println("你选的车型是：10T，车辆规格是：9.6*2.4*2.4，车容载量是：16");
+		break;
+		case 5:System.out.println("你选的车型是：集装箱20‘，车辆规格是：5.8*2.4*2.4，车容载量是：10");
+		break;
+		case 6:System.out.println("你选的车型是：集装箱40‘，车辆规格是：12*2.4*2.4，车容载量是：20");
+		break;
+		case 7:System.out.println("你选的车型是：小车，车辆规格是：T/A，车容载量是：纸箱");
+		break;
+		default :System.out.println("没有此型号");
+		break;
+		}
+	}
